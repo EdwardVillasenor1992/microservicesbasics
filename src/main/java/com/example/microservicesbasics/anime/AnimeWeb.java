@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.microservicesbasics.anime.logic.AnimeLogicManager;
-import com.example.microservicesbasics.kittens.web.KittensWebResult;
+//import com.example.microservicesbasics.kittens.web.KittensWebResult;
 
 @RestController
 public class AnimeWeb {
