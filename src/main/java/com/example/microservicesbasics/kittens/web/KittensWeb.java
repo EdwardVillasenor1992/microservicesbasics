@@ -15,8 +15,7 @@ public class KittensWeb {
 	@ResponseBody
 	KittensWebResult kittens() {
 		KittensWebResult kwRes = new KittensWebResult();
-		kwRes.setId("1");
-		kwRes.setName("kitty");
+		
 		kwRes.setApiUrl(kittensApiUrl);
 		return kwRes;
 	}
