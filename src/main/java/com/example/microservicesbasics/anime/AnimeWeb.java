@@ -17,8 +17,7 @@ public class AnimeWeb {
 	@ResponseBody
 	ResponseEntity<String> anime() {
 		ResponseEntity<String> result = manager.obtainAnimeApiImageUrl();
-		//AnimeWebResults awRes = new AnimeWebResults();
-		//awRes.setUrl(result);
+		
 		return result;
 	}
 }
