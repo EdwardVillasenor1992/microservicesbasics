@@ -15,11 +15,11 @@ public class AnimeLogicManager {
 	
 	@Value("${animeApiTags:}")
 	private String animeApiTags;
-	public String obtainAnimeApiImageUrl() {
+	public ResponseEntity<String> obtainAnimeApiImageUrl() {
 		String apiUrl = animeApiUrl + animeApiKey + animeApiTags;
 		RestTemplate rest = new RestTemplate();
 		ResponseEntity<String> response = rest.getForEntity(apiUrl, String.class);
-		return response.getBody();
+		return response;
 	}
 
 }
