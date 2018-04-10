@@ -14,7 +14,7 @@ public class KittensLogicManager {
 	private String kittensApiKey;
 	
 	public ResponseEntity<String> obtainKittenApiImageUrl() {
-		String apiUrl = kittensApiUrl + kittensApiKey;
+		String apiUrl = kittensApiUrl;
 		RestTemplate rest = new RestTemplate();
 		ResponseEntity<String> response = rest.getForEntity(apiUrl, String.class);
 		return response;
